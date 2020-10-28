@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/websaite#">
+    <meta charset="utf-8">
+    <title>ARjs_test</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script type="text/javascript"
+        src="//typesquare.com/3/tsst/script/ja/typesquare.js?5f212f1631a04631a9715ceee90393a3" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body>
+    <a-scene embedded arjs>
+        <a-assets>
+            <a-asset-item id="obj" src="img/Lantern_new_Assem_3.obj"></a-asset-item> <!-- objファイル -->
+            <a-asset-item id="mtl" src="img/Lantern_new_Assem_3.obj"></a-asset-item> <!-- mtlファイル -->
+        </a-assets>
+        <a-marker preset="hiro">
+            <a-obj-model src="#obj" mtl="#mtl" scale=".01 .01 .01" position="0 1.5 0"></a-obj-model>
+            <a-text value="サンプル" position="0 0 0" align="center"></a-text>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+
+
+</body>
+
+</html>
