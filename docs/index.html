@@ -18,10 +18,10 @@
     <a-scene embedded arjs>
         <a-assets>
             <a-asset-item id="obj" src="img/Lantern_new_Assem_3_edit.obj"></a-asset-item> <!-- objファイル -->
-
+            <a-asset-item id="mtl" src="img/Lantern_new_Assem_3_edit.mtl"></a-asset-item> <!-- mtlファイル -->
         </a-assets>
         <a-marker preset="hiro">
-            <a-obj-model src="#obj" scale=".01 .01 .01" position="0 1.5 0"></a-obj-model>
+            <a-obj-model src="#obj" mtl="#mtl" scale=".01 .01 .01" position="0 1.5 0"></a-obj-model>
             <a-text value="サンプル" position="0 0 0" align="center"></a-text>
         </a-marker>
         <a-entity camera></a-entity>
