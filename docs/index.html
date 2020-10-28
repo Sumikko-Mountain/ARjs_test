@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="ja">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/websaite#">
@@ -17,17 +17,36 @@
 <body>
     <a-scene embedded arjs>
         <a-assets>
-            <a-asset-item id="obj" src="img/Lantern_new_Assem_OBJ.obj"></a-asset-item> <!-- objファイル -->
-            <a-asset-item id="mtl" src="img/Lantern_new_Assem_OBJ.mtl"></a-asset-item> <!-- mtlファイル -->
+            <a-asset-item id="obj" src="img/Lantern_new_Assem_OBJ.obj"></a-asset-item> 
+            <a-asset-item id="mtl" src="img/Lantern_new_Assem_OBJ.mtl"></a-asset-item> 
         </a-assets>
-        <a-scene>
+        <a-marker preset="hiro">
             <a-obj-model src="#obj" mtl="#mtl" scale=".01 .01 .01" position="0 1.5 0"></a-obj-model>
             <a-text value="サンプル" position="0 0 0" align="center"></a-text>
-            </a-marker>
-            <a-entity camera></a-entity>
-        </a-scene>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
 
 
+</body>
+
+</html>-->
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+    <title>untitled</title>
+</head>
+
+<body>
+    <a-scene>
+        <a-box position="5 0 -7" rotation="0 45 0" color="#4CC3D9"></a-box>
+        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    </a-scene>
 </body>
 
 </html>
